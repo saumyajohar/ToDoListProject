@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 app.set('view engine', 'ejs');    // to tell the browser that we are using ejs
 
-mongoose.connect("mongodb://127.0.0.1:27017/todolistDB");
+// mongoose.connect("mongodb://127.0.0.1:27017/todolistDB");
 mongoose.connect("mongodb://127.0.0.1:27017/mongodb+srv://saumj0203:4aZRct77SYgEVYkI@cluster0.rrx7woo.mongodb.net/test");
 
 const itemsSchema = new mongoose.Schema ({
